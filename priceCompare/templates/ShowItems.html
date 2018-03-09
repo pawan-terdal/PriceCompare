@@ -8,7 +8,10 @@
   <body>
     Items will be displayed here
     <div class="div">
-      <form action="HomePage.html" method="post">
+      <form action="" method="post">
+        {% for i in results %}
+        <p>{{ i }}</p>
+        {% endfor %}
         <button type="submit" name="button" class="button">Back</button>
       </form>
 
